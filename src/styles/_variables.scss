@@ -1,0 +1,24 @@
+//---------------------Layout----------------------
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
+
+//---------------------Colors----------------------
+$primary-color: #1698D9;
+$primary-hover-color: #2EA8E6;
+$disabled-color: #B3B3B3;
+$light-bg-color: #F2F2F2;
+
+$accent-color: #D91667;
+$accent-hover-color: #E52E7A;
+$secondary-accent-color: #FFFF66;
+
+$default-text-color: white;
+$primary-text-color: black;
+$secondary-text-color: #666666;
+
+:root {
+  --default-text-color: #{$default-text-color};
+}

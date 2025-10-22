@@ -1,0 +1,65 @@
+@use '@styles/variables' as v;
+
+.card {
+  position: relative;
+  background: v.$primary-color;
+  color: v.$primary-text-color;
+  border-radius: 10px;
+  padding: 4px;
+  width: 320px;
+  clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 40px);
+  cursor: pointer;
+
+  &__body {
+    height: 100%;
+    background: v.$light-bg-color;
+    border-radius: inherit;
+    clip-path: inherit;
+  }
+
+  &__circle {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    right: 12px;
+    bottom: 12px;
+    background: v.$primary-color;
+    color: v.$default-text-color;
+    border-radius: 50%;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  &_hovered:hover {
+    background: v.$primary-hover-color;
+    .card__circle {
+      background: v.$primary-hover-color;
+    }
+  }
+
+  &_accent {
+    background: v.$accent-color;
+    .card__circle {
+      background: v.$accent-color;
+    }
+  }
+  &_accent.card_hovered:hover {
+    background: v.$accent-hover-color;
+    .card__circle {
+      background: v.$accent-hover-color;
+    }
+  }
+
+  &_disabled {
+    background: v.$disabled-color;
+    .card__circle {
+      background: v.$disabled-color;
+    }
+    pointer-events: none;
+  }
+}

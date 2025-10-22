@@ -1,0 +1,32 @@
+@use '@styles/variables' as v;
+@use 'fonts';
+@use 'helpStyles';
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background-image: url('./../assets/img/bg.png');
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: v.$default-text-color;
+}
+
+h1 {
+  font-family: 'Exo2';
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 44px;
+}

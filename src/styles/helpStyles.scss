@@ -1,0 +1,11 @@
+@use '@styles/variables' as v;
+
+.text {
+  &_center {
+    text-align: center;
+  }
+
+  &_secondaryAccent {
+    color: v.$secondary-accent-color;
+  }
+}

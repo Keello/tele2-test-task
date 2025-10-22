@@ -1,0 +1,60 @@
+@use '@styles/variables' as v;
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 30px;
+  gap: 14px;
+}
+
+.card {
+  height: 100%;
+  padding: 17px 5px 280px 40px;
+  background: url('@assets/img/Cat.png') no-repeat calc(0% - 35px) calc(100% + 100px);
+
+  &__header {
+    margin: 0 0 5px 0;
+    color: v.$secondary-text-color;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 48px;
+  }
+
+  &__subTitle {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+  }
+
+  &__features {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: v.$secondary-text-color;
+  }
+
+  &__weighUnit {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  &_disabled {
+    opacity: 0.5;
+    .card__header,
+    .card__title,
+    .card__subTitle,
+    .card__features {
+      color: v.$disabled-color;
+    }
+  }
+}
+
+.description {
+  text-align: center;
+
+  &_disabled {
+    color: v.$secondary-accent-color;
+  }
+}

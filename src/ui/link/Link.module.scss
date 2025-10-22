@@ -1,0 +1,13 @@
+@use '@styles/variables' as v;
+
+.link {
+  position: relative;
+  color: v.$primary-color;
+  cursor: pointer;
+
+  border-bottom: 1px dashed v.$primary-color;
+
+  &:hover {
+    color: v.$primary-hover-color;
+  }
+}
