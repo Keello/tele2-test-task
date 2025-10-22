@@ -1,6 +1,6 @@
 
 #  Тестовое задание Tele2
-- Демо: [Демо](https://keello.github.io/tele2-test/)
+- Демо: [Демо](https://keello.github.io/tele2-test-task/)
 - Стэк: React, TypeScript, Vite, ESLint, Prettier, SCSS modules.
 
 ## Требования:
